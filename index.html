@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Una pregunta</title>
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💘</text></svg>">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="layout">
+
+    <!-- Tarjeta principal -->
+    <section class="container">
+
+      <!-- Pantalla 1 -->
+      <section class="card" id="screen-intro">
+        <h1>Hola, Majojo</h1>
+        <p>Tengo una pregunta nueva.</p>
+        <button class="btn btn-primary" id="btn-start">
+          Ver pregunta
+        </button>
+      </section>
+
+      <!-- Pantalla 2 -->
+      <section class="card hidden" id="screen-question">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <p>
+          Prometo no molestarte y darte muchos besos
+        </p>
+
+        <div class="buttons">
+          <button class="btn btn-primary" id="btn-yes">
+            Sí
+          </button>
+          <button class="btn btn-secondary" id="btn-no">
+            No
+          </button>
+        </div>
+      </section>
+
+      <!-- Pantalla Sí -->
+      <section class="card hidden" id="screen-yes">
+        <h1>Perfecto.</h1>
+        <p>
+          Paso por usted el<br>
+          <strong>14 de febrero · 8:00 PM</strong>
+        </p>
+
+        <button class="btn btn-primary" id="btn-save">
+          Guardar recuerdo
+        </button>
+
+        <button class="btn btn-secondary" id="btn-reset-yes">
+          Volver
+        </button>
+
+        <canvas id="memoryCanvas" width="800" height="1000" class="hidden"></canvas>
+      </section>
+
+      <!-- Pantalla No -->
+      <section class="card hidden" id="screen-no">
+        <h1>No te preocupes</h1>
+        <p>
+          Tu ya no me quieres
+        </p>
+
+        <button class="btn btn-primary" id="btn-reset-no">
+          Volver
+        </button>
+      </section>
+
+      <!-- GALERÍA DE 20 FOTOS -->
+      <section class="gallery">
+        <img src="img/foto1.png" alt="Foto 1">
+        <img src="img/foto2.png" alt="Foto 2">
+        <img src="img/foto3.png" alt="Foto 3">
+        <img src="img/foto4.png" alt="Foto 4">
+        <img src="img/foto5.png" alt="Foto 5">
+        <img src="img/foto6.png" alt="Foto 6">
+        <img src="img/foto7.png" alt="Foto 7">
+        <img src="img/foto8.png" alt="Foto 8">
+        <img src="img/foto9.png" alt="Foto 9">
+        <img src="img/foto10.png" alt="Foto 10">
+        <img src="img/foto11.png" alt="Foto 11">
+        <img src="img/foto12.png" alt="Foto 12">
+        <img src="img/foto13.png" alt="Foto 13">
+        <img src="img/foto14.png" alt="Foto 14">
+        <img src="img/foto15.png" alt="Foto 15">
+        <img src="img/foto16.png" alt="Foto 16">
+        <img src="img/foto17.png" alt="Foto 17">
+        <img src="img/foto18.png" alt="Foto 18">
+        <img src="img/foto19.png" alt="Foto 19">
+        <img src="img/foto20.png" alt="Foto 20">
+      </section>
+
+    </section>
+
+    <!-- Snake -->
+    <aside class="snake-panel">
+      <h2>Snake</h2>
+      <canvas id="snake" width="240" height="240"></canvas>
+      <p class="snake-hint">Desliza el dedo o usa flechas</p>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
